@@ -1,0 +1,6 @@
+[submodule "droids_shop/backend"]
+	path = droids_shop/backend
+	url = https://github.com/IFraimG/droids-shop-server
+[submodule "droids_shop/frontend"]
+	path = droids_shop/frontend
+	url = https://github.com/IFraimG/droids-shop
