@@ -1,0 +1,17 @@
+services:
+  droids_app:
+    build:
+      context: ./droids_shop/frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+  host_app:
+    build:
+      context: ./pet_projects_host
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    # volumes:
+    #   - ./pet_projects_host:/src
+    environment:
+      NODE_ENV: development
